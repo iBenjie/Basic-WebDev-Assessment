@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Books</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="icon2.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Montserrat&family=Sacramento&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="top-container">
+      <!-- <img class="top-cloud" src="images/cloud.png" alt="cloud-png" /> -->
+      <h1 class="name">Anime Books</h1>
+      <!-- <img class="mountain" src="images/mountain.png" alt="mountain-png" /> -->
+      <!-- <img class="bottom-cloud" src="images/cloud.png" alt="cloud-png" /> -->
+      <div class="btn-pos">
+        <button id="open" class="btn-cart">🛒</button>
+      </div>
+
+      <div class="modal-container" id="modal_container">
+        <div class="modal">
+          <h2>Shopping Cart🛒</h2>
+          <p id="itemsAdded"></p>
+          <button id="close">Close</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/solo-leveling.png" style="width: 100%" />
+        <div class="text">Solo Leveling</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/naruto.jpg" style="width: 100%" />
+        <div class="text">Naruto Shippuden</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/onepiece.png" style="width: 100%" />
+        <div class="text">One Piece</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/aot.png" style="width: 100%" />
+        <div class="text">Attack on Titan</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/black-clover.png" style="width: 100%" />
+        <div class="text">Black Clover</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <br />
+    <section id="product1" class="section-p1">
+      <h2>Featured Products</h2>
+      <div class="pro-container">
+        <div class="pro">
+          <img id="img1" src="images/solo-leveling2.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name1"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price1"></h4>
+          </div>
+          <a href="#"><i id="button1" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/naruto2.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name2"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price2"></h4>
+          </div>
+          <a href="#"><i id="button2" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/onepiece2.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name3"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price3"></h4>
+          </div>
+          <a href="#"><i id="button3" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/aot2.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name4"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price4"></h4>
+          </div>
+          <a href="#"><i id="button4" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/black-clover2.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name5"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price5"></h4>
+          </div>
+          <a href="#"><i id="button5" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/spyxfam-v1.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name6"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price6"></h4>
+          </div>
+          <a href="#"><i id="button6" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/chainsawMan.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name7"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price7"></h4>
+          </div>
+          <a href="#"><i id="button7" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/jujutsukaisen.png" alt="" />
+          <div class="desc">
+            <h3 id="dom-name8"></h3>
+            <div class="review">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 id="dom-price8"></h4>
+          </div>
+          <a href="#"><i id="button8" class="fas fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+  <footer>
+    <section>
+      <div class="bottom-container">
+        <p class="copyright">
+          © Benjie Basa Web Assessment 2022. All rights reserved.
+        </p>
+      </div>
+    </section>
+  </footer>
+</html>

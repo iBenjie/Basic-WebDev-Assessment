@@ -1,0 +1,42 @@
+{
+  "product1": {
+    "name": "Solo Leveling",
+    "vol": "Vol. 1",
+    "price": 9.99
+  },
+  "product2": {
+    "name": "Naruto Shippuden",
+    "vol": "Vol. 1",
+    "price": 10.89
+  },
+  "product3": {
+    "name": "One Piece",
+    "vol": "Vol. 1",
+    "price": 12.99
+  },
+  "product4": {
+    "name": "Attack on Titan",
+    "vol": "Vol. 1",
+    "price": 11.99
+  },
+  "product5": {
+    "name": "Black Clover",
+    "vol": "Vol. 1",
+    "price": 9.99
+  },
+  "product6": {
+    "name": "SpyXFamily",
+    "vol": "Vol. 1",
+    "price": 8.89
+  },
+  "product7": {
+    "name": "Chainsaw Man",
+    "vol": "Vol. 1",
+    "price": 7.69
+  },
+  "product8": {
+    "name": "Jujutsu no Kaisen",
+    "vol": "Vol. 1",
+    "price": 8.99
+  }
+}

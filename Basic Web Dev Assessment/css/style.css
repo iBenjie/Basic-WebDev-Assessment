@@ -1,0 +1,297 @@
+body {
+  color: #40513e;
+  margin: 0;
+  text-align: center;
+  font-family: "Space", serif;
+  align-items: center;
+}
+h1 {
+  margin: 20px auto 10px auto;
+  font-family: "Space", sans-serif;
+  font-size: 3.65rem;
+  color: #0098f7;
+  line-height: 1;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: normal;
+  padding: 10px;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #eaf6f6;
+  border-width: 5px;
+  width: 4%;
+  margin: 100px auto;
+}
+p {
+  line-height: 2;
+  flex-wrap: wrap;
+}
+a {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+#close {
+  background-color: #11999e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.02);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal {
+  z-index: 1;
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal h2 {
+  margin: 0;
+}
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+.modal-container {
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-container.show {
+  z-index: 3;
+  pointer-events: auto;
+  opacity: 1;
+}
+.btn-pos {
+  background-color: #cdf0ea;
+  position: absolute;
+  right: 100px;
+}
+
+.img-size {
+  width: 100px;
+}
+.top-container {
+  background-color: white;
+  position: relative;
+  height: 100px;
+  display: flex;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+}
+
+.copyright {
+  color: white;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+/* carousel section */
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  z-index: 1;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  border-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn-pos {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end carousel section */
+#open {
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
+
+#open:hover {
+  background: #a084ca;
+  background-image: -webkit-linear-gradient(top, #89cffd, #89cffd);
+  background-image: -moz-linear-gradient(top, #89cffd, #89cffd);
+  background-image: -ms-linear-gradient(top, #89cffd, #89cffd);
+  background-image: -o-linear-gradient(top, #89cffd, #89cffd);
+  background-image: linear-gradient(to bottom, #89cffd, #89cffd);
+  text-decoration: none;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  margin: auto 10px;
+  border: 1px solid #cce7d0;
+  border-radius: 50px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+  margin: 15px 0;
+  transition: 0.2s ease;
+}
+
+#product1 .pro img {
+  width: 100%;
+  height: 65%;
+  border-radius: 50px;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#product1 .pro .desc i {
+  color: rgb(251, 240, 91);
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  color: #11999e;
+  border: 1px solid #cce7d0;
+}
+
+.bottom-container {
+  margin: 0;
+  background-color: #11999e;
+}
